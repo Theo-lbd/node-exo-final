@@ -1,0 +1,117 @@
+body {
+    background-color: #282a36;
+    font-family: 'Arial', sans-serif;
+    color: #f8f8f2;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 150px;
+}
+
+.outer-container {
+    padding: 40px 0;
+    min-height: 100vh;
+}
+
+.centralized-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.navbar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar a, .navbar span {
+    margin: 0 10px;
+}
+
+.form-container, .container {
+    background-color: #44475a;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.input-container {
+    margin: 10px 0;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6272a4;
+    color: #f8f8f2;
+    font-size: 16px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffb86c;
+    color: #282a36;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #f1fa8c;
+}
+
+.input-container{
+    margin: 10px 20px 10px 0px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+}
+.delete-button-cell {
+    text-align: right; /* aligne le contenu de la cellule à droite */
+    width: 1%; /* s'assure que la cellule ne prend que l'espace nécessaire */
+}
+
+.delete-button-cell a:hover{
+    color: red;
+    text-decoration: underline 1px red;
+}
+
+table {
+    max-width: 100%;
+}
+table th {
+    background-color: #6272a4;  /* Couleur d'arrière-plan des en-têtes */
+    padding: 8px;               /* Espacement interne */
+    text-align: left;           /* Alignement du texte */
+    border-bottom: 2px solid #f8f8f2;  /* Ligne séparatrice sous les en-têtes */
+}
+table tr{
+    text-align: center;
+}
+
+table tr td{
+    padding: 10px;
+}
+
+/* Ajoutez les styles de votre choix ici */
+a {
+    text-decoration: none;
+    color: #fff;
+}

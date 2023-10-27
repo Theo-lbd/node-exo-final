@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Ajouter un étudiant</title>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="centralized-container">
+            <div class="navbar">
+                <a href="/">[ Home ]</a>
+                <span>|</span>
+                <a href="/users">Users</a>
+            </div>            
+            <div class="form-container">
+                <h2>Ajouter un étudiant</h2>
+                <div id="error-message"></div>
+
+                <form action="/add-student" method="POST">
+                    <div class="input-container">
+                        <label for="name" class="visually-hidden">Nom:</label>
+                        <input type="text" id="name" name="name" placeholder="Nom complet" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="birth" class="visually-hidden">Date de naissance:</label>
+                        <input type="date" id="birth" name="birth" required>
+                    </div>
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        
+        if (error) {
+            const errorMessageElement = document.getElementById('error-message');
+            errorMessageElement.textContent = error;
+            errorMessageElement.style.color = 'red';
+        }
+    });
+</script>
+</html>
